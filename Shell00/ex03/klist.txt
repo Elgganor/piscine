@@ -1,0 +1,7 @@
+Credentials cache: API:93F7354D-2CDF-4349-8905-2F6F21EC09AC
+        Principal: mrouabeh@42.FR
+
+  Issued                Expires             Flags    Principal
+Jul  1 14:55:22 2019  Jul  8 14:55:22 2019  FPRIA  krbtgt/42.FR@42.FR
+Jul  1 14:55:24 2019  Jul  8 14:55:22 2019  FPA    ldap/ldap-proxy.42.fr@42.FR
+Jul  1 14:55:24 2019  Jul  8 14:55:22 2019  FPA    HTTP/student-storage-1.42.fr@42.FR
