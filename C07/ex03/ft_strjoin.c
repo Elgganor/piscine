@@ -6,13 +6,13 @@
 /*   By: mohamed <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 16:56:57 by mohamed           #+#    #+#             */
-/*   Updated: 2019/07/14 19:26:17 by mohamed          ###   ########.fr       */
+/*   Updated: 2019/07/15 11:18:18 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
 	int	len;
 
@@ -38,7 +38,7 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
-int	ft_strjoin(int size, char **strs, char *sep)
+int	ft_strjoin(int size, char **strs)
 {
 	char	*cat;
 	int	cat_len;
@@ -60,5 +60,5 @@ int	main(void)
 {
 	char **strs = {"Hello World", "Test", "Salut"};
 
-	printf("%d\n", ft_strjoin(3, strs, " "));
+	printf("%d\n", ft_strjoin(3, strs));
 }
