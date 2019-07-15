@@ -6,7 +6,7 @@
 /*   By: mohamed <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 16:56:57 by mohamed           #+#    #+#             */
-/*   Updated: 2019/07/15 12:34:34 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/15 13:46:13 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,21 +33,23 @@ char	*ft_strcat(char *dest, char *src)
 	dest_size = ft_strlen(dest);
 	while (src[i] != '\0')
 	{
-		i = 0;
+		dest[dest_size + i] = src[i];
+		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
 
 char	ft_strjoin(int size, char **strs, char *sep)
 {
 	char	*dest;
-	int		len_sep;
-	int		len_strs_p;
+	int		i;
 
+	i = 0;
 	dest = (char *)malloc(sizeof(char) * (size + ft_strlen(sep) + 1));
-	while ()
+	while (i < size)
 	{
-		
+		dest = ft_strcat(dest, 
 	}
 	return (dest);
 }
