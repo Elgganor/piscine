@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 15:14:19 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/14 15:17:40 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/15 16:00:11 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_is_prime(int nb)
 		return (0);
 	if (nb == 2)
 		return (1);
-	while (i == (nb / 2) && i < 46340)
+	while (i <= (nb / 2) && i < 46340)
 	{
 		if (nb % i == 0)
 			return (0);
