@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 15:02:06 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/14 15:04:21 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/16 08:56:26 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,5 @@ int	ft_iterative_power(int nb, int power)
 	{
 		res = res * nb;
 	}
-	if (res > 2147483647)
-		return (0);
 	return (res);
 }
