@@ -7,6 +7,7 @@ char	*ft_strjoin(int size, char **strs, char *sep);
 
 int	main(int ac, char **av)
 {
+	char *strs = {"Hello", "World", NULL};
 	char *sep;
 	char *dest;
 
