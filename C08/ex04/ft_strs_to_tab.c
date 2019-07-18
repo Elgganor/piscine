@@ -6,11 +6,12 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 13:52:24 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/18 13:27:32 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/18 16:11:06 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "ft_stock_str.h"
 
 int					ft_strlen(char *str)
 {
@@ -53,7 +54,8 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	{
 		tab_struct[i].size = ft_strlen(av[i]);
 		tab_struct[i].str = av[i];
-		tab_struct[i].copy = ft_strdup(av[i++]);
+		tab_struct[i].copy = ft_strdup(av[i]);
+		i++;
 	}
 	tab_struct[i].size = 0;
 	tab_struct[i].str = 0;
