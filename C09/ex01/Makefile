@@ -1,2 +1,4 @@
-all: main.c libft.a
-	gcc main.c -L. -lft
+all: libft.a
+	gcc *.c -L. -lft
+norme:
+	norminette -R CheckForbiddenSourceHeader
