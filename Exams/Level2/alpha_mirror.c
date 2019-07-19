@@ -7,30 +7,30 @@ void	ft_putchar(char c)
 
 int	main(int ac, char **av)
 {
-	if (ac != 2)
-		ft_putchar('\n');
-	else
-	{
-		int	i;
+	int	i;
+	char ltr;
 
-		i = 0;
+	i = 0;
+	if (ac == 2)
+	{
 		while (av[1][i] != '\0')
 		{
 			if ('a' <= av[1][i] && av[1][i] <= 'z')
 			{
-				ft_putchar(av[1][i]);
+				ltr = 'z'- av[1][i] + 'a';
 			}
 			else if ('A' <= av[1][i] && av[1][i] <= 'Z')
 			{
-				ft_putchar('z' - av[1][i]);
+				ltr = 'Z' - av[1][i] + 'A';
 			}
 			else
 			{
-				ft_putchar(av[1][i]);
+				ltr = av[1][i];
 			}
+			write(1, &ltr, 1);
 			i++;
 		}
-		ft_putchar('\n');
 	}
+	write(1, "\n", 1);
 	return (0);
 }
