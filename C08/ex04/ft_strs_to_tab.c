@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 13:52:24 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/18 16:11:06 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/19 10:48:20 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,13 +52,11 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		return (0);
 	while (i < ac)
 	{
-		tab_struct[i].size = ft_strlen(av[i]);
+		tab_struct[i].size = ft_strlen(av[i] - 1);
 		tab_struct[i].str = av[i];
 		tab_struct[i].copy = ft_strdup(av[i]);
 		i++;
 	}
-	tab_struct[i].size = 0;
 	tab_struct[i].str = 0;
-	tab_struct[i].copy = 0;
 	return (tab_struct);
 }
