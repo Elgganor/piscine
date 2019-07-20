@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/18 17:24:37 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/18 17:55:55 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/20 16:44:58 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ int		count_words(char *str, char *sep)
 
 int	main(void)
 {
-	char *str = "Salutse";
-	char *sep = "se";
+	char *str = "Foo  Bar Baz";
+	char *sep = " ";
 
 	printf("%d\n", count_words(str, sep));
 	return (0);
