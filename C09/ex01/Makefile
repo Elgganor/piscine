@@ -6,7 +6,7 @@
 #    By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/19 13:24:55 by mrouabeh          #+#    #+#              #
-#    Updated: 2019/07/21 18:06:33 by mrouabeh         ###   ########.fr        #
+#    Updated: 2019/07/21 19:29:02 by mrouabeh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,3 +31,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
+
+.PHONY: all clean fclean re
