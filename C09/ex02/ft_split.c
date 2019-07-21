@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/18 17:24:37 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/21 14:58:13 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/21 15:00:32 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,8 +94,10 @@ char	**ft_split(char *str, char *charset)
 		if (str[i] && is_charset(str[i], charset) == 0)
 		{
 			tab[j] = malloc_word(&str[i], charset);
-			i++;
 			j++;
+			i++;
+			while (str[i] && is_charset(str[i], charset) == 0)
+				i++;
 		}
 	}
 	tab[j] = 0;
