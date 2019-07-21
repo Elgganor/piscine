@@ -6,19 +6,25 @@
 #    By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/19 13:24:55 by mrouabeh          #+#    #+#              #
-#    Updated: 2019/07/21 10:45:54 by mrouabeh         ###   ########.fr        #
+#    Updated: 2019/07/21 18:06:33 by mrouabeh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
 SRCS = ./srcs/ft_putchar.c ./srcs/ft_swap.c ./srcs/ft_putstr.c ./srcs/ft_strlen.c ./srcs/ft_strcmp.c
+
 OBJ = ${SRCS:.c=.o}
+
 FLAGS = -Wall -Wextra -Werror
+
 INCLUDES= ./includes
 
+.c.o:
+	gcc $(FLAGS) -I $(INCLUDES) -c $< -o $(<:.c=.o)
 all: $(NAME)
 
-$(NAME): $(SRCS) $(OBJ)
+$(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 clean: 
 	rm -f $(OBJ)
