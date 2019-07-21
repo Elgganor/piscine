@@ -6,12 +6,11 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/18 17:24:37 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/21 15:00:32 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/21 15:06:00 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int		is_charset(char c, char *charset)
 {
@@ -66,13 +65,13 @@ char	*malloc_word(char *str, char *charset)
 	{
 		return (0);
 	}
-	while(str[i] != '\0' && is_charset(str[i], charset) == 0)
+	while (str[i] != '\0' && is_charset(str[i], charset) == 0)
 	{
 		tab_char[i] = str[i];
 		i++;
 	}
 	tab_char[i] = '\0';
-	return(tab_char);
+	return (tab_char);
 }
 
 char	**ft_split(char *str, char *charset)
@@ -102,22 +101,4 @@ char	**ft_split(char *str, char *charset)
 	}
 	tab[j] = 0;
 	return (tab);
-}
-
-int	main(int ac, char **av)
-{
-	int	i;
-	char **tab;
-
-	i = 0;
-	if (ac == 3)
-	{
-		tab = ft_split(av[1], av[2]);
-		while (i < count_word(av[1], av[2]))
-		{
-			printf("%s\n", tab[i]);
-			i++;
-		}
-	}
-	return  (0);
 }
