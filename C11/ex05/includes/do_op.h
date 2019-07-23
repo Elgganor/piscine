@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 09:40:08 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/23 17:05:53 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/23 19:08:37 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define DO_OP_H
 
 # include <unistd.h>
+
 int		ft_atoi(char *str);
 int		sum(int a, int b);
 int		sub(int a, int b);
