@@ -6,11 +6,11 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 10:44:10 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/23 10:44:18 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/23 16:52:38 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "do-op.h"
+#include "do_op.h"
 
 void	do_op(int a, char *c, int b, int (*f[])(int, int))
 {
