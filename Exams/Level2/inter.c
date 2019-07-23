@@ -7,6 +7,9 @@ void	ft_putchar(char c)
 
 void	inter(char *s1, char *s2)
 {
+<<<<<<< HEAD
+	
+=======
 	char	tab[256] = {0};
 	int		i;
 	int		j;
@@ -30,6 +33,7 @@ void	inter(char *s1, char *s2)
 		}
 		i++;
 	}
+>>>>>>> 286763e82c0c4905f8b9a5b915f55fef37824406
 }
 
 int	main(int ac, char **av)
