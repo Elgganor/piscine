@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:46:27 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/21 16:58:34 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/23 14:48:10 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_any(char **tab, int (*f)(char *))
 	int	i;
 
 	i = 0;
-	while (tab[i] != NULL)
+	while (tab[i])
 	{
 		if ((*f)(tab[i]) != 0)
 			return (1);
