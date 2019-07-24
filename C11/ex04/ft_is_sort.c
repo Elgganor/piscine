@@ -6,7 +6,7 @@
 /*   By: mrouabeh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 08:41:43 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/07/24 09:08:11 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/07/24 09:31:05 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ int	ft_is_sort(int *tab, int length, int (*f)(int, int))
 		return (0);
 	else if (length == 1)
 		return (1);
-	while ((*f)(tab[i], tab[i + 1]) == 0)
+	while (i < (length - 1) && (*f)(tab[i], tab[i + 1]) == 0)
 		i++;
-	if ((*f)(tab[i], tab[i + 1]) > 0)
+	if (i < (length - 1) && (*f)(tab[i], tab[i + 1]) > 0)
 		ordre = -1;
-	else
+	else if (i < (length - 1) && (*f)(tab[i], tab[i + 1]) < 0)
 		ordre = 1;
 	i++;
-	while (tab[i] != 0 && i < length - 1)
+	while (i < length - 1)
 	{
 		if ((*f)(tab[i], tab[i + 1]) > 0 && ordre == 1)
 			return (0);
